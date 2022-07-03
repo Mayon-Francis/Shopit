@@ -1,0 +1,101 @@
+.saleSection {
+  width: 100%;
+  height: 300px;
+  background-color: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.saleSection:nth-child(odd) {
+  background-color: var(--accent-secondary-light);
+}
+.saleSection:nth-child(even) {
+  background-color: var(--accent-color-light);
+}
+
+.saleSection:nth-child(odd) .saleSection--saleHeader {
+  color: var(--accent-secondary-dark);
+}
+
+.saleSection:nth-child(even) .saleSection--saleHeader {
+  color: var(--accent-color-dark);
+}
+
+.saleSection:nth-child(odd) .saleSection--saleText {
+  color: var(--accent-secondary);
+}
+
+.saleSection:nth-child(even) .saleSection--saleText {
+  color: var(--accent-color);
+}
+
+.sale--slider {
+  width: 95%;
+  height: 200px;
+}
+
+.sale--slider--card {
+  width: 60%;
+  height: 70%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  margin-top: 20px;
+  background-color: var(--accent-color-inverted);
+}
+
+.sale--slider--card a {
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sale--slider--reducedPrice {
+  color: rgb(34, 199, 34);
+  width: 50%;
+  font-size: small;
+  margin-right: 0.6rem;
+}
+
+.sale--slider--actualPrice {
+  text-decoration: line-through;
+  opacity: 0.7;
+  width: 50%;
+  font-size: small;
+}
+
+.sale--sliderImage {
+  height : 60%;
+  aspect-ratio: 1/1;
+  border: none;
+}
+
+.saleSection--terms {
+  color: #000;
+  align-self: flex-end;
+  font-size: 0.6rem;
+  margin-right: 20px;
+}
+
+.saleSection .swiper-button-prev {
+  height: 71%;
+  width: 7.5%;
+  left: -10px;
+  background: linear-gradient(to right,  rgb(161 161 161 / 65%) 0%,rgba(0,0,0,0) 100%);
+  transform: translateY(-42%);
+}
+
+.saleSection .swiper-button-next {
+  height: 70.5%;
+  width: 7.5%;
+  right: -10px;
+  background: linear-gradient(to left,  rgb(161 161 161 / 65%) 0%,rgba(0,0,0,0) 100%);
+  transform: translateY(-42%);
+}

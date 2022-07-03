@@ -1,0 +1,46 @@
+.cartHeading {
+    margin-left: 2.5rem;
+    margin-top: 2.5rem;
+}
+.itemListWrapper {
+    width: 80%;
+    display: block;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cart--item {
+    padding: 1.5rem;
+    margin: 1.5rem;
+}
+
+.cart--item--image {
+    height: 4.5rem;
+    aspect-ratio: 1/1;
+}
+
+.currency::before {
+    content: '₹';
+}
+
+.divider {
+    margin: auto !important;
+    width: 80%;
+}
+
+.cart--item .itemTotal {
+    display: inline-block;
+    width: max-content;
+}
+
+.itemTotalPrice {
+    padding: 2.5rem;
+}
+
+.grandTotal {
+    font-size: large;
+    font-weight: bold;
+}

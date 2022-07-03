@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --accent-color : #90CAF9;
+  --accent-color-light : #f2f8fd;
+  --accent-color-dark : #1976D2;
+  --accent-color-inverted : #fff;
+
+  --accent-secondary : #5E35B1;
+  --accent-secondary-light : #ccc8d3;
+  --accent-secondary-dark : #4527A0;
+  --accent-secondary-inverted : #fff;
+
+  --highlight-primary : rgb(253, 239, 34);
+  --highlight-secondary : rgb(252, 179, 44);
+}
+
+body {
+  margin: 0;
+  font-family: 'Ubuntu';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  overflow: auto;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+}

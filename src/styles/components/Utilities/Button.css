@@ -1,0 +1,49 @@
+.button {
+    all: unset;
+    padding: 0.7rem;
+    margin: 0.7rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button--swipe {
+    border: 2px solid var(--accent-color);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s ease-in-out;
+    color: var(--accent-color);
+    
+}
+
+.button--swipe::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--accent-color);
+    z-index: -1;
+    transform: translateX(-101%);
+    transition: 0.3s ease-in-out;
+}
+.button--swipe:hover {
+    color: var(--accent-color-inverted);
+}
+
+.button--swipe:hover::before {
+    transform: translateX(0);
+}
+
+
+.button--outlined {
+    border: 2px solid var(--accent-color);
+    transition: 0.3s ease-in-out;
+}
+.button--outlined:hover {
+    background-color: var(--accent-color-light);
+}

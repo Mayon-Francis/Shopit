@@ -1,0 +1,44 @@
+.landing {
+    width: 100%;
+    height: 100vh;
+    /* background-image: url("assets/images/landing.jpg");
+    background-size: cover; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color: var(--accent-color);
+    overflow: hidden;
+}
+
+.highlightText {
+    color: var(--accent-color-dark);
+}
+
+.wave1,
+.wave2,
+.wave3,
+.wave4,
+.wave5 {
+    position: absolute;
+    bottom: 0;
+}
+
+.wave1 {
+    height: 25vh;
+}
+.wave2 {
+    height: 20vh;
+}
+/* .wave3 {
+    height: 20vh;
+} */
+.wave4 {
+    height: 15vh;
+}
+.wave4 {
+    height: 10vh;
+}

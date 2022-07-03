@@ -1,0 +1,25 @@
+.productSpecs{
+    width: 50%;
+    height: 100%;
+    border-left: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 750px) {
+    .productSpecs {
+        width: 80%;
+        height: 70vh;
+        border-left: none;
+    }
+}
+
+.productSpec--panel {
+    width: 100%;
+    height: 80%;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.productSpecs .reviewsWrapper {
+    overflow-y: scroll;
+    height: 87%;
+}

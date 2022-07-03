@@ -1,0 +1,35 @@
+.productCartWrapper {
+    width: 100%;
+    height: min-content;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productCartWrapper .pricing,
+.productCartWrapper .checkout {
+    width: 50%;
+    height: fit-content;
+    padding: 2rem;
+}
+
+@media (max-width: 750px) {
+    .productCartWrapper {
+        flex-direction: column;
+    }
+
+    .productCartWrapper .pricing,
+    .productCartWrapper .checkout {
+        width: 100%;
+    }
+}
+
+.productCartWrapper .pricing .actualPrice {
+    text-decoration: line-through;
+    color: rgb(110, 110, 110);
+}
+
+.productCartWrapper .pricing .price {
+    color: rgb(14, 163, 14);
+}

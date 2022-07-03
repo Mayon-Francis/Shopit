@@ -1,0 +1,43 @@
+.productGallery{
+    width: 50%;
+    height: 100%;
+}
+
+@media (max-width: 750px) {
+    .productGallery {
+        width: 80%;
+        height: 70vh;
+    }
+}
+
+
+.productGallery .productImageMain {
+    height: 80%;
+    width: 100%;
+}
+
+.productGallery .productImageThumbs {
+    height: 20%;
+    width: 100%;
+}
+
+.productGallery .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productGallery .swiper-slide  > img{
+    height: 80%;
+    aspect-ratio: 1/1;
+}
+
+.productGallery .productImageThumbs .swiper-slide  > img{
+    height: 80%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+}
+
+.swiper-slide-active {
+    background-color: var(--accent-light);
+}
