@@ -1,3 +1,3 @@
 # Basic Shopping Website
 
-http://shopit123.netlify.app/
+https://shopit123.netlify.app
